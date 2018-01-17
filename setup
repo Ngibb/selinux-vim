@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "This is pretty specific to my system, so if it doesn't work for you make a PR..."
+
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+ln -s $DIR/syntax/fc.vim /usr/share/vim/vim72/syntax/fc.vim
+ln -s $DIR/syntax/if.vim /usr/share/vim/vim72/syntax/if.vim
+ln -s $DIR/syntax/te.vim /usr/share/vim/vim72/syntax/te.vim
+
+ln -s $DIR/ftdetect/fc.vim /usr/share/vim/vimfiles/ftdetect/fc.vim;
+ln -s $DIR/ftdetect/if.vim /usr/share/vim/vimfiles/ftdetect/if.vim;
+ln -s $DIR/ftdetect/te.vim /usr/share/vim/vimfiles/ftdetect/te.vim;
+
